@@ -2,7 +2,7 @@
 
 return array(
 			'host' => 'localhost',
-			'dbname' => 'php_base',
+			'dbname' => 'studda',
 			'user' => 'root',
 			'password' => '',
 );

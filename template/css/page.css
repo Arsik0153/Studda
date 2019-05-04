@@ -1,0 +1,19 @@
+main{
+  background-color: #fff;
+  color: black;
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  line-height: 25px;
+}
+
+main img{
+  width: 100%;
+}
+
+.app {
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}

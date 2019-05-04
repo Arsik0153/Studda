@@ -1,0 +1,55 @@
+.accordion {
+  background-color: #fff;
+  color: rgb(12, 25, 83);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s;
+  font-family: "Montserrat";
+}
+
+.accordion:first-child{
+  border-top-left-radius: 15px;
+}
+
+.active, .accordion:hover {
+  background-color: #e8f1ff;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #297af9;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  color: rgb(12, 25, 83);
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel p{
+  font-family: 0.1em;
+}
+
+.panel-link{
+  padding: 15px 0px 15px 0px;
+  margin-left: 15px;
+  border-bottom: 1px solid #2979f938;
+}

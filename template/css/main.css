@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&subset=cyrillic');
+
+body{
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+}
+
+*::selection{
+  color: #297af9;
+  background-color: #fff;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(12, 25, 83);
+}
+
+.app{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg,#297af9,#333fb7);
+  color: white;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.06);
+  position: absolute;
+  padding-bottom: 30px;
+}
+
+.app__header{
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.about{
+  position: fixed;
+  z-index: 999;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  margin-top: -100vh;
+  transition: .6s cubic-bezier(0.19, 1, 0.22, 1);;
+}
+
+.about header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.about h3{
+  font-weight: normal;
+}
+
+.about__toggle{
+  margin-top: 0;
+}
+
+.about header svg{
+  width: 25px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+main{
+  padding: 0 30px;
+}
+
+.desktop{
+  display: none;
+  padding: 30px 100px;
+}
+
+@media screen and (min-width: 768px){
+  .desktop{
+    display: block;
+  }
+
+  .about{
+    display: none;
+  }
+
+  .app{
+    display: none;
+  }
+}
+
+.app svg{
+  width: 25px;
+  cursor: pointer;
+  fill: white;
+}
+
+.app__header a{
+  color: #fff;
+}

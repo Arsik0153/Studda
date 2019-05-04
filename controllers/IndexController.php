@@ -3,8 +3,9 @@
 class IndexController{
 
     public function actionIndex(){
-        echo "index";
-        return true;
+        require_once(ROOT . '/views/index/index.php');
+
+		return true;
     }
 
 }

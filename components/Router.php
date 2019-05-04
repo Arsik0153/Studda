@@ -28,15 +28,8 @@ class Router
 
 			if(preg_match("~$uriPattern~", $uri)) {
 
-/*				echo "<br>Где ищем (запрос, который набрал пользователь): ".$uri;
-				echo "<br>Что ищем (совпадение из правила): ".$uriPattern;
-				echo "<br>Кто обрабатывает: ".$path; */
-
-				// Получаем внутренний путь из внешнего согласно правилу.
-
 				$internalRoute = preg_replace("~$uriPattern~", $path, $uri);
 
-/*				echo '<br>Нужно сформулировать: '.$internalRoute.'<br>'; */
 
 				$segments = explode('/', $internalRoute);
 
@@ -55,8 +48,6 @@ class Router
 				}
 
 				$controllerObject = new $controllerName;
-				/*$result = $controllerObject->$actionName($parameters); - OLD VERSION */
-				/*$result = call_user_func(array($controllerObject, $actionName), $parameters);*/
 				$result = call_user_func_array(array($controllerObject, $actionName), $parameters);
 				
 				if ($result != null) {
