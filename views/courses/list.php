@@ -30,6 +30,12 @@
 
       <?php foreach ($courseList as $courseItem): ?>
         <button class="accordion"><?=$courseItem["text"]?></button>
+        <div class="panel">
+        <?php foreach ($courseItem["subCourseList"] as $subCourseItem): ?>
+            <a href="/<?= $subCourseItem["coursename"] . "/". $subCourseItem["id"]?>" class="panel-link"><?=$subCourseItem["text"]?></a>
+        <?php endforeach;?>
+        </div>
+        
       <?php endforeach;?>
 
 
