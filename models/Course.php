@@ -42,6 +42,18 @@
       return $subCourseList;
     }
 
+    public static function getPage($id){
+      $page = array();
+
+      $db = Db::getConnection();
+
+      $result = $db->query("SELECT * FROM coursepages WHERE parentId = " . $id);
+      $result->setFetchMode(PDO::FETCH_ASSOC);
+      $arr = $result->fetch();
+
+      return $arr;
+    }
+
   }
 
 ?>

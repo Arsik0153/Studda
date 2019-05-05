@@ -15,6 +15,15 @@ class FrontendController{
 
   }
 
+  public function actionView($id){
+    $coursePage = array();
+
+    $page = Course::getPage($id);
+
+    require_once(ROOT . "/views/courses/page.php");
+    return true;
+  }
+
 }
 
 ?>
