@@ -12,6 +12,7 @@
   <title>Studda | Бесплатные уроки программирования</title>
   <link rel="stylesheet" href="/template/css/main.css">
   <link rel="stylesheet" href="/template/css/page.css">
+  <link rel="stylesheet" href="/template/css/prettify.css">
 </head>
 
 <body>
@@ -51,7 +52,8 @@
     <h2>Studda использует технологию Code-To-Go, поэтому он доступен только на смартфонах. Пожалуйста, зайдите на сайт
       со смартфона.</h2>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
   <script src="/template/js/main.js"></script>
 
 </body>
