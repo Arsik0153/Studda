@@ -37,7 +37,7 @@
   background-color: white;
   max-height: 0;
   overflow: hidden;
-  transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   color: rgb(12, 25, 83);
   line-height: 20px;
   display: flex;
