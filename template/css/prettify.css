@@ -67,3 +67,11 @@ li.L3,
 li.L5,
 li.L7,
 li.L9 { background: #eee }
+
+.prettyprint {
+  width: calc(100% + 34px) !important;
+  margin-left: -30px !important;
+  margin-right: 30px;
+  border-radius: 0px !important;
+  border: none !important;
+}

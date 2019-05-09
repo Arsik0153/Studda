@@ -32,7 +32,16 @@
     <main>
 
       <?=$page["text"]?>
-      
+
+      <div class="pagination">
+        <div class="pagination-a">
+          <a href="/frontend/<?=$page["id"]-1?>"><span class="arrow">&lsaquo;</span> Назад</a>
+        </div>
+        <div class="pagination-a">
+          <a href="/frontend/<?=$page["id"]+1?>">Вперёд <span class="arrow">&rsaquo;</span></a>
+        </div>
+      </div>
+
     </main>
 
   </div>
@@ -52,9 +61,10 @@
     <h2>Studda использует технологию Code-To-Go, поэтому он доступен только на смартфонах. Пожалуйста, зайдите на сайт
       со смартфона.</h2>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
   <script src="/template/js/main.js"></script>
 
 </body>
+
 </html>
