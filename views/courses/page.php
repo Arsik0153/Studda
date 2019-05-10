@@ -31,14 +31,16 @@
 
     <main>
 
-      <?=$page["text"]?>
+      <?=html_entity_decode($page["text"])?>
 
       <div class="pagination">
         <div class="pagination-a">
-          <a href="/frontend/<?=$page["id"]-1?>"><span class="arrow">&lsaquo;</span> Назад</a>
+          <?php if($id != "1"):?>
+            <a href="/frontend/<?=$id-1?>"><span class="arrow">&lsaquo;</span> Назад</a>
+          <?php endif; ?>
         </div>
         <div class="pagination-a">
-          <a href="/frontend/<?=$page["id"]+1?>">Вперёд <span class="arrow">&rsaquo;</span></a>
+          <a href="/frontend/<?=$id+1?>">Вперёд <span class="arrow">&rsaquo;</span></a>
         </div>
       </div>
 
